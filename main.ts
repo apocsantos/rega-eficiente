@@ -10,6 +10,7 @@ basic.forever(function () {
         images.iconImage(IconNames.Sad).showImage(0)
         pins.digitalWritePin(DigitalPin.P1, 1)
         OLED.writeStringNewLine("Rega em curso")
+        basic.pause(5000)
     } else {
         images.iconImage(IconNames.Happy).showImage(0)
         images.iconImage(IconNames.Umbrella).scrollImage(1, 200)
